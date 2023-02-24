@@ -16,6 +16,10 @@
     left: 10rem;
     transition: all 0.2s;
 
+    @include respond(tab-port) {
+      left: 8rem;
+    }
+
     &:hover {
       text-decoration: none;
       border-radius: 30px;
