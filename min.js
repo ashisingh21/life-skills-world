@@ -1,4 +1,4 @@
-document.documentElement.style.setProperty('--animate-duration', '1.3s');
+document.documentElement.style.setProperty('--animate-duration', '1.2s');
 $(document).ready(function () {
     const offset = '80%';
     $(".header__text__thin").waypoint(function () {
@@ -16,6 +16,12 @@ $(document).ready(function () {
     $(".header__text__para").waypoint(function () {
 
         $(".header__text__para").addClass("animate__animated animate__slideInLeft")
+    }, { offset })
+
+    // BUTTON
+    $(".button").waypoint(function () {
+
+        $(".button").addClass("animate__animated animate__zoomIn")
     }, { offset })
 
 

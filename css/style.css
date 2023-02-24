@@ -19,7 +19,8 @@
 .testimonial__2,
 .testimonial__3,
 .testimonial__4,
-.form {
+.form,
+.button {
   opacity: 0; }
 
 .heading-secondary.animate__animated,
@@ -35,7 +36,8 @@
 .testimonial__2.animate__animated,
 .testimonial__3.animate__animated,
 .testimonial__4.animate__animated,
-.form.animate__animated {
+.form.animate__animated,
+.button.animate__animated {
   opacity: 1; }
 
 html {
@@ -124,7 +126,7 @@ body {
   @media (max-width: 56.25em) {
     .header {
       background-position: right;
-      height: 70vh; } }
+      height: 75vh; } }
   .header__text {
     width: 50%;
     margin-left: 12rem;
@@ -151,10 +153,9 @@ body {
   font-size: 2.5rem;
   border-radius: 50px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  transition: all 0.4s;
+  transition: all 0.3s !important;
   padding: 1.5rem 5rem;
-  border: none;
-  animation: popup 0.8s forwards; }
+  border: none; }
   .button:hover {
     transform: scale(1.1);
     text-decoration: none;
@@ -164,8 +165,6 @@ body {
   color: #fff;
   background-color: #ff194f; }
   .hotpink-btn:hover {
-    transform: scale(1.1);
-    text-decoration: none;
     background-color: #fff;
     color: #ff194f; }
 

@@ -27,7 +27,8 @@
 .testimonial__2,
 .testimonial__3,
 .testimonial__4,
-.form {
+.form,
+.button {
   opacity: 0;
 }
 
@@ -44,6 +45,7 @@
 .testimonial__2.animate__animated,
 .testimonial__3.animate__animated,
 .testimonial__4.animate__animated,
-.form.animate__animated {
+.form.animate__animated,
+.button.animate__animated {
   opacity: 1;
 }
