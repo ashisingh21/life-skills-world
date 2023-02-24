@@ -1,0 +1,20 @@
+.quote {
+  &__text {
+    background-image: linear-gradient(
+      to top right,
+      $color-primary-green,
+      $color-primary-skyblue
+    );
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+
+    font-size: 6rem;
+  }
+  &__image {
+    & img {
+      width: 100%;
+    }
+  }
+}

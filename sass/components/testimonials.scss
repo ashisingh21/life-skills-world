@@ -1,0 +1,50 @@
+.testimonial {
+  &__content {
+  }
+
+  &__box {
+    background-image: linear-gradient(
+      110deg,
+      $color-primary-green,
+      $color-primary-skyblue
+    );
+    border-top-right-radius: 57px;
+    border-bottom-left-radius: 57px;
+    padding: 3.4rem 4rem;
+    margin-bottom: 10rem;
+  }
+
+  &__text {
+    color: $color-white;
+    margin-bottom: 3rem;
+  }
+  &__client {
+    position: relative;
+
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    &__image {
+      overflow: hidden;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50px;
+      float: left;
+      // & img {
+      // }
+    }
+
+    &__name {
+      font-size: 2rem;
+      color: $color-secondary-hotpink;
+      text-transform: uppercase;
+      vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 6rem;
+    }
+  }
+}

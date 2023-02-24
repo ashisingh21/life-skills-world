@@ -1,0 +1,38 @@
+.header {
+  background-image: linear-gradient(
+      to top right,
+      rgba($color-primary-green, 0.8),
+      rgba($color-primary-skyblue, 0.8)
+    ),
+    url("../images/hero-bg.png");
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  border-radius: 0 0 250px 0;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-position: right;
+    height: 70vh;
+  }
+
+  &__text {
+    width: 50%;
+    margin-left: 12rem;
+    @include align-center-vertically-absolute;
+
+    @include respond(tab-port) {
+      margin-left: 6rem;
+      width: 100%;
+    }
+
+    &__thin {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    &__para {
+      width: 95%;
+    }
+  }
+}

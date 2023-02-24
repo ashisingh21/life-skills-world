@@ -1,0 +1,49 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.2);
+  transition: all 0.4s;
+  padding: 1.5rem 5rem;
+  border: none;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: $color-grey-dark-2;
+  }
+}
+
+.hotpink-btn {
+  color: $color-white;
+  background-color: $color-secondary-hotpink;
+
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    background-color: $color-white;
+    color: $color-secondary-hotpink;
+  }
+}
+
+.outline-hotpink-btn {
+  color: $color-secondary-hotpink;
+  background-color: $color-white;
+  border: 2px solid $color-secondary-hotpink;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-secondary-hotpink;
+    border: 1px solid $color-white;
+  }
+}
+
+// .btn-animated {
+//   transform: scale(1);
+//   opacity: 1;
+
+//   &:hover {
+//     transform: scale(1.5);
+//     opacity: 1;
+//   }
+// }

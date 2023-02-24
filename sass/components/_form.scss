@@ -1,0 +1,28 @@
+.form {
+  border-radius: 57px;
+  &__content {
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(
+      110deg,
+      $color-primary-green,
+      $color-primary-skyblue
+    );
+    border-radius: 0 57px 0 57px;
+    box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.3);
+  }
+  &__input {
+    height: 6rem;
+    width: 80%;
+    margin: 2rem auto;
+    display: block;
+    padding: 1.8rem;
+  }
+}
+
+textarea {
+  width: 80%;
+  margin: 2rem auto;
+  display: block;
+  padding: 1.8rem;
+}

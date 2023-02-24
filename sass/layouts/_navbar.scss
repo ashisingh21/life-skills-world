@@ -1,0 +1,39 @@
+.navigation {
+  padding: 2rem 12rem;
+
+  @include respond(tab-port) {
+    padding: 2rem 6rem;
+  }
+
+  &__brand {
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $color-grey-dark-2;
+    transition: all 0.2s;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-secondary-hotpink;
+    }
+  }
+
+  &__list {
+    margin-left: 13%;
+  }
+
+  &__item {
+    margin-right: 3rem;
+  }
+  &__link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      font-size: 2rem;
+      color: $color-grey-dark-2;
+    }
+    &:hover {
+      color: $color-secondary-hotpink;
+    }
+  }
+}

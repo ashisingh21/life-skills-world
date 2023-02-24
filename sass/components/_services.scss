@@ -1,0 +1,23 @@
+.service {
+  background-image: linear-gradient(to top right, #ffc86b, #fda873);
+
+  &__box {
+    background-color: $color-white;
+    border-bottom-right-radius: 57px;
+    padding-bottom: 4.1rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+      padding: 3rem;
+    }
+
+    & img {
+      width: 100%;
+    }
+
+    &__text {
+      margin-top: 3.2rem;
+      margin-bottom: 4rem;
+    }
+  }
+}

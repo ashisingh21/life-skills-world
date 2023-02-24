@@ -1,0 +1,37 @@
+.feature {
+  margin: 6rem 12rem 12rem 12rem;
+  @include respond(tab-port) {
+    margin: 6rem;
+  }
+}
+
+.service__content {
+  padding: 0 12rem 10rem 12rem;
+  margin-bottom: 4rem;
+
+  @include respond(tab-port) {
+    padding: 0 6rem 4rem 6rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.quote {
+  margin: 10rem 12rem;
+  @include respond(tab-port) {
+    margin: 6rem;
+  }
+}
+
+.testimonial__content {
+  margin: 0 12rem;
+  @include respond(tab-port) {
+    margin: 0 6rem;
+  }
+}
+
+.form {
+  margin: 10rem 12rem;
+  @include respond(tab-port) {
+    margin: 5rem 6rem;
+  }
+}
