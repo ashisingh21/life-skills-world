@@ -1,11 +1,3 @@
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
 @keyframes popup {
   0% {
     opacity: 0;
@@ -13,6 +5,38 @@
   100% {
     opacity: 1;
     transform: scale(1); } }
+
+.heading-secondary,
+.feature__box1,
+.feature__box2,
+.feature__box3,
+.service__box1,
+.service__box2,
+.service__box3,
+.quote__image,
+.quote__text,
+.testimonial__1,
+.testimonial__2,
+.testimonial__3,
+.testimonial__4,
+.form {
+  opacity: 0; }
+
+.heading-secondary.animate__animated,
+.feature__box1.animate__animated,
+.feature__box2.animate__animated,
+.feature__box3.animate__animated,
+.service__box1.animate__animated,
+.service__box2.animate__animated,
+.service__box3.animate__animated,
+.quote__image.animate__animated,
+.quote__text.animate__animated,
+.testimonial__1.animate__animated,
+.testimonial__2.animate__animated,
+.testimonial__3.animate__animated,
+.testimonial__4.animate__animated,
+.form.animate__animated {
+  opacity: 1; }
 
 html {
   font-size: 62.5%; }
@@ -197,7 +221,10 @@ body {
   border-top-right-radius: 57px;
   border-bottom-left-radius: 57px;
   padding: 3.4rem 4rem;
-  margin-bottom: 10rem; }
+  margin-bottom: 6rem; }
+  @media (max-width: 56.25em) {
+    .testimonial__box {
+      margin-bottom: 5rem; } }
 
 .testimonial__text {
   color: #fff;
@@ -230,9 +257,14 @@ body {
   padding: 3.1rem 0; }
   @media (max-width: 56.25em) {
     .subscribe {
-      padding: 1.8rem 0; } }
+      padding: 1.5rem 0;
+      text-align: center;
+      border-radius: 0 57px 0; } }
   .subscribe__content {
     margin: 3rem 12rem; }
+    @media (max-width: 56.25em) {
+      .subscribe__content {
+        margin: 0; } }
     .subscribe__content__text {
       font-size: 3rem;
       font-weight: 500;
@@ -247,7 +279,7 @@ body {
       @media (max-width: 56.25em) {
         .subscribe__content__text {
           margin: 0;
-          line-height: 2;
+          line-height: 1.2;
           text-align: center;
           position: relative;
           font-size: 2.7rem; } }
@@ -257,7 +289,8 @@ body {
       width: 60%; }
       @media (max-width: 56.25em) {
         .subscribe__content__input {
-          margin: 0; } }
+          width: 70%;
+          margin: 2rem 0; } }
 
 .form {
   border-radius: 57px; }
@@ -291,10 +324,16 @@ textarea {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #fff;
-    transform: translateY(2.5rem); }
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+    transition: all 0.2s; }
     .navigation__brand:hover {
       text-decoration: none;
-      color: #ff194f; }
+      border-radius: 30px;
+      color: #ff194f;
+      text-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+      transform: scale(0.9); }
 
 .full__navigation__checkbox {
   display: none; }

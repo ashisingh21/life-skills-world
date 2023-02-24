@@ -11,12 +11,18 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: $color-white;
-
-    transform: translateY(2.5rem);
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+    transition: all 0.2s;
 
     &:hover {
       text-decoration: none;
+      border-radius: 30px;
       color: $color-secondary-hotpink;
+      text-shadow: 0 1.5rem 4rem rgba($color: #000, $alpha: 0.2);
+
+      transform: scale(0.9);
     }
   }
 }

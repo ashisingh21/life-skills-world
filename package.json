@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "jquery": "^3.6.3",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "waypoints": "^4.0.1"
   }
 }
