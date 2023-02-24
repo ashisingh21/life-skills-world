@@ -326,11 +326,11 @@ textarea {
     color: #fff;
     position: absolute;
     top: 4rem;
-    left: 10rem;
+    left: 12rem;
     transition: all 0.2s; }
     @media (max-width: 56.25em) {
       .navigation__brand {
-        left: 8rem; } }
+        left: 6rem; } }
     .navigation__brand:hover {
       text-decoration: none;
       border-radius: 30px;

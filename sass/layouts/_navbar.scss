@@ -13,11 +13,11 @@
     color: $color-white;
     position: absolute;
     top: 4rem;
-    left: 10rem;
+    left: 12rem;
     transition: all 0.2s;
 
     @include respond(tab-port) {
-      left: 8rem;
+      left: 6rem;
     }
 
     &:hover {
