@@ -258,8 +258,7 @@ body {
   @media (max-width: 56.25em) {
     .subscribe {
       padding: 1.5rem 0;
-      text-align: center;
-      border-radius: 0 30px 0; } }
+      text-align: center; } }
   .subscribe__content {
     margin: 3rem 12rem; }
     @media (max-width: 56.25em) {
