@@ -27,9 +27,9 @@
       }
     }
     &__input {
-      margin-right: 2rem;
+      margin-right: 1rem;
       height: 5.4rem;
-      width: 68%;
+      width: 60%;
 
       @include respond(tab-port) {
         margin: 0;

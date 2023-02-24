@@ -7,6 +7,8 @@
   transition: all 0.4s;
   padding: 1.5rem 5rem;
   border: none;
+
+  animation: popup 0.8s forwards;
   &:hover {
     transform: scale(1.1);
     text-decoration: none;

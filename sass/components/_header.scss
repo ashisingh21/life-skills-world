@@ -17,9 +17,10 @@
   }
 
   &__text {
+    @include align-center-vertically-absolute;
     width: 50%;
     margin-left: 12rem;
-    @include align-center-vertically-absolute;
+    left: 0;
 
     @include respond(tab-port) {
       margin-left: 6rem;
@@ -33,6 +34,7 @@
     }
     &__para {
       width: 95%;
+      margin-bottom: 4rem;
     }
   }
 }

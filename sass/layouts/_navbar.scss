@@ -1,5 +1,6 @@
 .navigation {
   padding: 2rem 12rem;
+  z-index: 10;
 
   @include respond(tab-port) {
     padding: 2rem 6rem;
@@ -9,31 +10,169 @@
     font-size: 4rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    color: $color-grey-dark-2;
-    transition: all 0.2s;
+    color: $color-white;
+
+    transform: translateY(2.5rem);
 
     &:hover {
       text-decoration: none;
       color: $color-secondary-hotpink;
     }
+  }
+}
+
+// Fullscreen navbar
+.full__navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.2rem;
+    right: 4.2rem;
+    background-color: $color-secondary-hotpink;
+    text-align: center;
+    z-index: 3000;
+    cursor: pointer;
+  }
+
+  &__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    background-image: radial-gradient(
+      $color-primary-green,
+      $color-primary-skyblue
+    );
+    z-index: 2000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 2500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &__list {
-    margin-left: 13%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    list-style: none;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  &__item {
+    margin: 3rem;
   }
 
-  &__item {
-    margin-right: 3rem;
-  }
   &__link {
     &:visited,
     &:link {
-      text-decoration: none;
-      font-size: 2rem;
-      color: $color-grey-dark-2;
-    }
-    &:hover {
+      display: inline-block;
       color: $color-secondary-hotpink;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+
+      text-decoration: none;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-secondary-hotpink 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
+      span {
+        display: inline-block;
+        margin-right: 1rem;
+      }
     }
+
+    &:hover {
+      background-position: 100%;
+      color: $color-white;
+      transform: translateX(1rem);
+    }
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    width: 100%;
+    opacity: 1;
+  }
+
+  // ICON
+
+  &__icon {
+    position: relative;
+    margin-top: 3.2rem;
+
+    &,
+    &::before,
+    &::after {
+      height: 3px;
+      width: 3rem;
+      background-color: $color-white;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      transition: all 0.4s;
+    }
+    &::before {
+      top: -0.8rem;
+      left: 0;
+    }
+
+    &::after {
+      top: 0.8rem;
+      left: 0;
+    }
+  }
+
+  &__button:hover &__icon {
+    &::before {
+      top: -1rem;
+      left: 0;
+    }
+
+    &::after {
+      top: 1rem;
+      left: 0;
+    }
+  }
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
